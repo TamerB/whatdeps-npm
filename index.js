@@ -39,7 +39,7 @@ var getLibs =  function(pkg) {
     );
 
     var response = {};
-	request({url:`http://localhost:3000/package?${options}`}, function (error , response, body) {
+	request({url:`https://nameless-gorge-98075.herokuapp.com/package?${options}`}, function (error , response, body) {
 		if (! error && response.statusCode == 200) {
 			response = body;
 			startDialog(response);
@@ -103,7 +103,7 @@ var loopDialog = function (res, i) {
 				if (i < res.unrecognized.length){
 				var x = {form: {packages: res.unrecognized[i], os: oss, pack_type: 'npm', dependencies: answer}};
 
-				request.post('http://localhost:3000/add', {
+				request.post('https://nameless-gorge-98075.herokuapp.com/add', {
 					form: qs1.stringify({
 						package: res.unrecognized[i], os: oss, pack_type: 'npm', dependencies: answer
 					}, {
@@ -219,8 +219,8 @@ var darwinInstall = function(res, i) {
 		});
 }
 
-exports.main = function() {
+main = function() {
 	getDeps();
 }
 
-//main();
+main();
