@@ -1,0 +1,29 @@
+{
+  "name": "whatdeps",
+  "version": "1.0.1",
+  "description": "An npm package that collects system libraries required by project dependencies",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TamerB/whatdeps-npm.git"
+  },
+  "keywords": [
+    "dependencies",
+    "system",
+    "libraries"
+  ],
+  "author": "TamerB <tamer.bhgt@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TamerB/whatdeps-npm/issues"
+  },
+  "homepage": "https://github.com/TamerB/whatdeps-npm#readme",
+  "dependencies": {
+    "colors": "^1.1.2",
+    "qs": "^6.4.0",
+    "request": "^2.81.0"
+  }
+}
