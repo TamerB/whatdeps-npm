@@ -1,6 +1,6 @@
 {
   "name": "whatdeps",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "An npm package that collects system libraries required by project dependencies",
   "main": "index.js",
   "scripts": {
