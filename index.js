@@ -219,8 +219,8 @@ var darwinInstall = function(res, i) {
 		});
 }
 
-main = function() {
+exports.main = function() {
 	getDeps();
 }
 
-main();
+//main();
