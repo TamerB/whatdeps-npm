@@ -27,7 +27,11 @@ Note: You can connect this npm package to an other REST API clone from https://g
  . For example:
 
 ```javascript
-base_uri 'http://localhost:3000'
+...
+request({url:`http://localhost:3000/package?${options}`}, function (error , response, body) {...}
+...
+request.post('http://localhost:3000/add', {form:{...}}, function (err, httpResponse, body) {...}
+...
 ```  
 
 ## Contributing
